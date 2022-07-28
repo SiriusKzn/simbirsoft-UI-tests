@@ -25,5 +25,3 @@ def prepare_file_to_compare():
         print("An IOError has occurred!")
     res_list = read_data.split('\n')
     return list(filter(None, res_list))
-
-print(generate_folder_name())
