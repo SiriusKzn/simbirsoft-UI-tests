@@ -39,9 +39,6 @@ class BasePage:
         element.send_keys(Keys.CONTROL + "a")
         element.send_keys(Keys.DELETE)
 
-    def go_to_elements(self, element):
-        self.driver.execute_script("arguments[0].scrollIntoView();", element)
-
     def action_right_click(self, element):
         action = ActionChains(self.driver)
         action.context_click(element).perform()
